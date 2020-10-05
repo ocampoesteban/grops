@@ -15,7 +15,7 @@ var gulp 		= require('gulp'),
 	// htmlhint  	= require('gulp-htmlhint');
 
 gulp.task('started', function() {
-	console.log('Gulp started');
+	return console.log('Gulp started');
 });
 	
 
@@ -38,6 +38,8 @@ gulp.task('sass', function () {
 		.on('error', sass.logError)
 		.pipe(gulp.dest('../HTML/css/'));
 });
+
+
 
 
 // // // Minify CSS
@@ -109,7 +111,7 @@ gulp.task('sass', function () {
 
 // This handles watching and running tasks
 gulp.task('watch', function () {
-    gulp.watch('../HTML/sass/**/*.scss', ['sass']);
+    return gulp.watch('../HTML/sass/**/*.scss', gulp.series('sass'));
     // gulp.watch('../HTML/css/layout.css', ['minify-css']);
     // gulp.watch('../HTML/css/layout.css', ['rtlcss']);
     // gulp.watch('../HTML/js/**/*.js', ['uglify']);
