@@ -32,11 +32,11 @@ gulp.task('started', function() {
 
 // Sass - Compile Sass files into CSS
 gulp.task('sass', function () {
-	return gulp.src('../HTML/sass/**/*.scss')
-		.pipe(changed('../HTML/css/'))
+	return gulp.src('../sass/**/*.scss')
+		.pipe(changed('../css/'))
 		.pipe(sass({ outputStyle: 'expanded' }))
 		.on('error', sass.logError)
-		.pipe(gulp.dest('../HTML/css/'));
+		.pipe(gulp.dest('../css/'));
 });
 
 
@@ -111,7 +111,7 @@ gulp.task('sass', function () {
 
 // This handles watching and running tasks
 gulp.task('watch', function () {
-    return gulp.watch('../HTML/sass/**/*.scss', gulp.series('sass'));
+    return gulp.watch('../sass/**/*.scss', gulp.series('sass'));
     // gulp.watch('../HTML/css/layout.css', ['minify-css']);
     // gulp.watch('../HTML/css/layout.css', ['rtlcss']);
     // gulp.watch('../HTML/js/**/*.js', ['uglify']);
