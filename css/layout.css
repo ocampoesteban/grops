@@ -476,40 +476,29 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
-.footer {
+footer {
   background: url(../img/1920x1080/03.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-.footer .footer-seperator {
+footer .footer-seperator {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer .footer-list {
-  margin-bottom: 0;
-}
-
-.footer .footer-list-item {
-  color: #cbd3e1;
-  margin-bottom: 25px;
-}
-
-.footer .footer-list-link {
-  color: #cbd3e1;
-}
-
-.footer .footer-list-link:hover {
-  color: #fff;
-}
-
-.footer .footer-input {
+footer .footer-input {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.footer .footer-logo {
+footer .footer-logo {
   width: 85px;
   height: auto;
+}
+
+footer .footer-copyright .row {
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 /*------------------------------------------------------------------
@@ -611,7 +600,7 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-wrap {
   display: inline-block;
-  padding: 13px 0;
+  padding: 12px 0;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
