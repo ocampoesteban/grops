@@ -133,3 +133,47 @@ h4 { @include font($size: 22px); }
     border: 2px solid #04B431;
   }
   
+.g-box-shadow__dark-lightest {
+    box-shadow: 0 2.25rem 2.25rem rgba(34, 35, 36, 0.05);
+}
+.g-box-shadow__dark-lightest:hover {
+    box-shadow: 0 2.3125rem 5rem rgba(34, 35, 36, 0.2);
+}
+
+.g-margin-b-30--xs {
+    margin-bottom: 1.875rem;
+}
+.g-text-center--xs {
+    text-align: center;
+}
+.g-margin-t-15--xs{
+    margin-top: 0rem;
+}
+.g-margin-b-80--xs {
+    margin-bottom: 5rem;
+}
+.g-margin-b-0--md {
+    margin-bottom: 0rem;
+}
+.g-font-size-32--xs {
+    font-size: 2rem;
+}
+.g-font-size-36--md {
+    font-size: 2.25rem;
+}
+.g-padding-y-80--xs {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.g-padding-y-125--sm {
+    padding-top: 7.8125rem;
+    padding-bottom: 7.8125rem;
+}
+.g-padding-x-40--xs {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+.g-padding-y-40--xs {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
