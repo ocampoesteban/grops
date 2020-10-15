@@ -439,7 +439,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .service {
   background: #fff;
-  padding: 50px;
+  padding: 30px;
 }
 
 .service .service-element,
@@ -460,10 +460,10 @@ fieldset[disabled] .btn-theme {
 }
 
 .service:hover .service-element {
-  opacity: 0;
+  opacity: 100%;
   -webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -50%, 0);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
