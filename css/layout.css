@@ -182,12 +182,12 @@ h4 {
   margin-bottom: 1.875rem;
 }
 
-.g-text-center--xs {
-  text-align: center;
+.g-margin-b-35--xs {
+  margin-bottom: 2rem;
 }
 
-.g-margin-t-15--xs {
-  margin-top: 0rem;
+.g-margin-b-40--xs {
+  margin-bottom: 2.5rem;
 }
 
 .g-margin-b-80--xs {
@@ -196,6 +196,14 @@ h4 {
 
 .g-margin-b-0--md {
   margin-bottom: 0rem;
+}
+
+.g-text-center--xs {
+  text-align: center;
+}
+
+.g-margin-t-15--xs {
+  margin-top: 0rem;
 }
 
 .g-font-size-32--xs {
@@ -437,6 +445,12 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
+.servicios article.article {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: white;
+}
+
 .service {
   background: #fff;
   padding: 50px;
@@ -531,6 +545,39 @@ fieldset[disabled] .btn-theme {
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+/*------------------------------------------------------------------
+  	[Faq]
+------------------------------------------------------------------*/
+.faq .img-title-container {
+  text-align: center;
+}
+
+.faq .gestion-energetica img,
+.faq .integra-energia img {
+  width: 45%;
+  margin: 0 auto;
+}
+
+.faq .faq-item {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+.faq .faq-item h4.item {
+  color: #a6a7aa;
+  font-weight: 600;
+}
+
+.faq .faq-item h4.item:before {
+  position: absolute;
+  width: 9px;
+  height: 2.4px;
+  background: #17bed2;
+  content: "";
+  margin-right: 10px;
+  transform: translate(-21px, 13px);
 }
 
 /*------------------------------------------------------------------
@@ -669,7 +716,7 @@ footer .footer-copyright .row {
 
 .header .logo-img {
   display: inline-block;
-  width: 66px;
+  width: 80%;
   height: auto;
   max-width: 100%;
   max-height: 100%;
@@ -685,6 +732,8 @@ footer .footer-copyright .row {
 
 .header .logo-img-active {
   display: none;
+  width: 58%;
+  height: auto;
   transition-duration: 400ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);

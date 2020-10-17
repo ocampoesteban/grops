@@ -1,7 +1,17 @@
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
+.servicios {
+	article {
+		&.article {
+			border-radius: 5px;
+			overflow: hidden;
+			background-color: white;
+		}
+	}
+}
 
+//TODO: deleted if not needed
 .service {
 	background: $color-white;
 	padding: 50px;

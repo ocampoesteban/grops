@@ -96,7 +96,7 @@
 
     .logo-img {
         display: inline-block;
-        @include size(66px, auto);
+        @include size(80%, auto);
         max-width: 100%;
         max-height: 100%;
         vertical-align: middle;
@@ -109,6 +109,7 @@
 
     .logo-img-active {
         display: none;
+        @include size(58%, auto);
         @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 }
