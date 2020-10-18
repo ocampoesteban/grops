@@ -1,0 +1,31 @@
+/*------------------------------------------------------------------
+  	[Faq]
+------------------------------------------------------------------*/
+.faq {
+	.img-title-container {
+		text-align: center;
+	}
+	.gestion-energetica,
+	.integra-energia {
+		img {
+			width: 35%;
+			margin: 0 auto;
+		}
+	}
+	.faq-item {
+		margin-left: 4vw;
+		margin-right: 4vw;
+		h4.item {
+			color: #a6a7aa;
+			font-weight: 600;
+			&:before {
+				@include position(absolute);
+				@include size(9px, 2.4px);
+				background: $color-base;
+				content: "";
+				margin-right: 10px;
+				transform: translate(-21px, 13px);
+			}
+		}
+	}
+}

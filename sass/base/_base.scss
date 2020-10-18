@@ -134,17 +134,23 @@ h4 { @include font($size: 22px); }
 .g-margin-b-30--xs {
     margin-bottom: 1.875rem;
 }
-.g-text-center--xs {
-    text-align: center;
+.g-margin-b-35--xs {
+    margin-bottom: 2rem;
 }
-.g-margin-t-15--xs{
-    margin-top: 0rem;
+.g-margin-b-40--xs {
+    margin-bottom: 2.5rem;
 }
 .g-margin-b-80--xs {
     margin-bottom: 5rem;
 }
 .g-margin-b-0--md {
     margin-bottom: 0rem;
+}
+.g-text-center--xs {
+    text-align: center;
+}
+.g-margin-t-15--xs{
+    margin-top: 0rem;
 }
 .g-font-size-32--xs {
     font-size: 2rem;
