@@ -2,18 +2,18 @@
   	[Service]
 ------------------------------------------------------------------*/
 .img-center {
-    display: flexbox;
-    margin-left: auto;
-    margin-right: auto;
+	display: flexbox;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .service-faq3 {
-	background:   $color-sky-light;
-    padding: 30px;
+	background: $color-sky-light;
+	padding: 30px;
 
-    .service-element-faq3,
+	.service-element-faq3,
 	.service-info-faq3 {
-		@include translate3d(0,0,0);
+		@include translate3d(0, 0, 0);
 		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 	}
 
@@ -24,15 +24,26 @@
 		margin-bottom: 30px;
 	}
 
-    &:hover {
-        .service-element-faq3 {
-            opacity: 100%;
-            @include translate3d(0,-10%,0);
-        }
-        .service-info-faq3 {
-            @include translate3d(0,-10%,0);
-        }
-    }
+	&:hover {
+		.service-element-faq3 {
+			opacity: 100%;
+			@include translate3d(0, -10%, 0);
+		}
+
+		.service-info-faq3 {
+			@include translate3d(0, -10%, 0);
+		}
+	}
+}
+
+.servicios {
+	article {
+		&.article {
+			border-radius: 5px;
+			overflow: hidden;
+			background-color: white;
+		}
+	}
 }
 
 .service {
@@ -41,7 +52,7 @@
 
 	.service-element,
 	.service-info {
-		@include translate3d(0,0,0);
+		@include translate3d(0, 0, 0);
 		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 	}
 
@@ -55,12 +66,12 @@
 	&:hover {
 		.service-element {
 			opacity: 100%;
-			@include translate3d(0,-40%,0);
+			@include translate3d(0, -40%, 0);
 			// @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 		}
 
 		.service-info {
-			@include translate3d(0,-30%,0);
+			@include translate3d(0, -30%, 0);
 			// @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 		}
 	}
