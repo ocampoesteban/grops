@@ -445,6 +445,47 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
+.img-center {
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-faq3 {
+  background: #fafafa;
+  padding: 30px;
+}
+
+.service-faq3 .service-element-faq3,
+.service-faq3 .service-info-faq3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.service-faq3 .service-icon {
+  display: block;
+  font-size: 30px;
+  color: #999caa;
+  margin-bottom: 30px;
+}
+
+.service-faq3:hover .service-element-faq3 {
+  opacity: 100%;
+  -webkit-transform: translate3d(0, -10%, 0);
+  -moz-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+}
+
+.service-faq3:hover .service-info-faq3 {
+  -webkit-transform: translate3d(0, -10%, 0);
+  -moz-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+}
+
 .servicios article.article {
   border-radius: 5px;
   overflow: hidden;
@@ -453,7 +494,7 @@ fieldset[disabled] .btn-theme {
 
 .service {
   background: #fff;
-  padding: 50px;
+  padding: 30px;
 }
 
 .service .service-element,
@@ -474,22 +515,16 @@ fieldset[disabled] .btn-theme {
 }
 
 .service:hover .service-element {
-  opacity: 0;
-  -webkit-transform: translate3d(0, -100%, 0);
-  -moz-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  opacity: 100%;
+  -webkit-transform: translate3d(0, -40%, 0);
+  -moz-transform: translate3d(0, -40%, 0);
+  transform: translate3d(0, -40%, 0);
 }
 
 .service:hover .service-info {
   -webkit-transform: translate3d(0, -30%, 0);
   -moz-transform: translate3d(0, -30%, 0);
   transform: translate3d(0, -30%, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 /*------------------------------------------------------------------
