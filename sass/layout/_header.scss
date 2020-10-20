@@ -104,6 +104,7 @@
 
     .logo-img-main {
         display: inline-block;
+        @include size(56%, auto);
         @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 

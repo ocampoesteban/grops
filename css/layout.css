@@ -234,6 +234,11 @@ h4 {
   padding-bottom: 2.5rem;
 }
 
+.item-center {
+  display: flex;
+  align-items: center;
+}
+
 /*------------------------------------------------------------------
   	[Blockquote]
 ------------------------------------------------------------------*/
@@ -760,6 +765,8 @@ footer .footer-copyright .row {
 
 .header .logo-img-main {
   display: inline-block;
+  width: 56%;
+  height: auto;
   transition-duration: 400ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
