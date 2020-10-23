@@ -497,6 +497,16 @@ fieldset[disabled] .btn-theme {
   background-color: white;
 }
 
+.image-icon {
+  display: block;
+  font-size: 30px;
+  color: #999caa;
+  margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .service {
   background: #fff;
   padding: 30px;
