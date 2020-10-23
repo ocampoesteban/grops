@@ -234,6 +234,11 @@ h4 {
   padding-bottom: 2.5rem;
 }
 
+.item-center {
+  display: flex;
+  align-items: center;
+}
+
 /*------------------------------------------------------------------
   	[Blockquote]
 ------------------------------------------------------------------*/
@@ -490,6 +495,16 @@ fieldset[disabled] .btn-theme {
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
+}
+
+.image-icon {
+  display: block;
+  font-size: 30px;
+  color: #999caa;
+  margin-bottom: 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .service {
@@ -760,6 +775,8 @@ footer .footer-copyright .row {
 
 .header .logo-img-main {
   display: inline-block;
+  width: 56%;
+  height: auto;
   transition-duration: 400ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);

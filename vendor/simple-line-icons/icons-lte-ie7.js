@@ -19,7 +19,6 @@ window.onload = function() {
 			'icon-social-dropbox' : '&#xe00a;',
 			'icon-social-dribbble' : '&#xe00b;',
 			'icon-shield' : '&#xe00c;',
-			'icon-screen-tablet' : '&#xe00d;',
 			'icon-screen-smartphone' : '&#xe00e;',
 			'icon-screen-desktop' : '&#xe00f;',
 			'icon-plane' : '&#xe010;',
