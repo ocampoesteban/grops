@@ -456,41 +456,6 @@ fieldset[disabled] .btn-theme {
   background-color: white;
 }
 
-.service {
-  background: #fff;
-  padding: 30px;
-}
-
-.service .service-element,
-.service .service-info {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.service .service-icon {
-  display: block;
-  font-size: 45px;
-  color: #999caa;
-  margin-bottom: 30px;
-}
-
-.service:hover .service-element {
-  opacity: 100%;
-  -webkit-transform: translate3d(0, -40%, 0);
-  -moz-transform: translate3d(0, -40%, 0);
-  transform: translate3d(0, -40%, 0);
-}
-
-.service:hover .service-info {
-  -webkit-transform: translate3d(0, -30%, 0);
-  -moz-transform: translate3d(0, -30%, 0);
-  transform: translate3d(0, -30%, 0);
-}
-
 /*------------------------------------------------------------------
   	[Work]
 ------------------------------------------------------------------*/
@@ -549,8 +514,39 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Benefits]
 ------------------------------------------------------------------*/
-.benefits .service-element .service-icon {
+.benefits .card {
+  background: #fff;
+  padding: 30px;
+}
+
+.benefits .card .card-element,
+.benefits .card .card-info {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.benefits .card .card-icon {
+  display: block;
+  font-size: 45px;
   color: #17bed27a;
+  margin-bottom: 30px;
+}
+
+.benefits .card:hover .card-element {
+  opacity: 100%;
+  -webkit-transform: translate3d(0, -40%, 0);
+  -moz-transform: translate3d(0, -40%, 0);
+  transform: translate3d(0, -40%, 0);
+}
+
+.benefits .card:hover .card-info {
+  -webkit-transform: translate3d(0, -30%, 0);
+  -moz-transform: translate3d(0, -30%, 0);
+  transform: translate3d(0, -30%, 0);
 }
 
 /*------------------------------------------------------------------
