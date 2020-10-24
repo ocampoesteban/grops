@@ -2,32 +2,49 @@
   	[Faq3]
 ------------------------------------------------------------------*/
 .what-used-for {
-	.box-container {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	.service-faq3 {
-		background: $color-sky-light;
-		padding: 30px;	
-		.service-element {
-			@include font($size:convertPxToRem(45px));
-			color: $color-beneficios-item;
-		}
-		.service-element-faq3,
-		.service-info-faq3 {
-			@include translate3d(0, 0, 0);
-			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-		}
-	
-		&:hover {
-			.service-element-faq3 {
-				opacity: 100%;
-				@include translate3d(0, -10%, 0);
+	.row {
+		.card {
+			flex:1;
+			margin-bottom: convertPxToRem(15px);
+			.service-faq3 {
+				background: $color-sky-light;
+				padding: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				.service-element {
+					@include font($size:convertPxToRem(45px));
+					color: $color-beneficios-item;
+				}
+				.service-element-faq3,
+				.service-info-faq3 {
+					@include translate3d(0, 0, 0);
+					@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+				}
+				.service-info-faq3 {
+					p {
+						margin-bottom: 0;
+					}
+				}
+			
+				&:hover {
+					.service-element-faq3 {
+						opacity: 100%;
+						@include translate3d(0, -10%, 0);
+					}
+			
+					.service-info-faq3 {
+						@include translate3d(0, -10%, 0);
+					}
+				}
 			}
-	
-			.service-info-faq3 {
-				@include translate3d(0, -10%, 0);
+			@media (min-width: $screen-sm-min) {
+				margin: convertPxToRem(15px);
 			}
+		}
+		@media (min-width: $screen-sm-min) {
+			display: flex;
+			flex-wrap: wrap;
 		}
 	}
 }

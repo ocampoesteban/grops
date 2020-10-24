@@ -614,23 +614,26 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Faq3]
 ------------------------------------------------------------------*/
-.what-used-for .box-container {
-  display: flex;
-  flex-wrap: wrap;
+.what-used-for .row .card {
+  flex: 1;
+  margin-bottom: 1.07143rem;
 }
 
-.what-used-for .service-faq3 {
+.what-used-for .row .card .service-faq3 {
   background: #fafafa;
   padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.what-used-for .service-faq3 .service-element {
+.what-used-for .row .card .service-faq3 .service-element {
   font-size: 3.21429rem;
   color: #17bed27a;
 }
 
-.what-used-for .service-faq3 .service-element-faq3,
-.what-used-for .service-faq3 .service-info-faq3 {
+.what-used-for .row .card .service-faq3 .service-element-faq3,
+.what-used-for .row .card .service-faq3 .service-info-faq3 {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -639,17 +642,34 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.what-used-for .service-faq3:hover .service-element-faq3 {
+.what-used-for .row .card .service-faq3 .service-info-faq3 p {
+  margin-bottom: 0;
+}
+
+.what-used-for .row .card .service-faq3:hover .service-element-faq3 {
   opacity: 100%;
   -webkit-transform: translate3d(0, -10%, 0);
   -moz-transform: translate3d(0, -10%, 0);
   transform: translate3d(0, -10%, 0);
 }
 
-.what-used-for .service-faq3:hover .service-info-faq3 {
+.what-used-for .row .card .service-faq3:hover .service-info-faq3 {
   -webkit-transform: translate3d(0, -10%, 0);
   -moz-transform: translate3d(0, -10%, 0);
   transform: translate3d(0, -10%, 0);
+}
+
+@media (min-width: 768px) {
+  .what-used-for .row .card {
+    margin: 1.07143rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .what-used-for .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 /*------------------------------------------------------------------
@@ -800,7 +820,7 @@ footer .footer-copyright .row {
 
 .header .logo-img-main {
   display: inline-block;
-  width: 56%;
+  width: 3.4rem;
   height: auto;
   transition-duration: 400ms;
   transition-property: all;
@@ -809,7 +829,7 @@ footer .footer-copyright .row {
 
 .header .logo-img-active {
   display: none;
-  width: 58%;
+  width: 3.4rem;
   height: auto;
   transition-duration: 400ms;
   transition-property: all;

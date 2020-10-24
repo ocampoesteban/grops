@@ -104,13 +104,13 @@
 
     .logo-img-main {
         display: inline-block;
-        @include size(56%, auto);
+        @include size(3.4rem, auto);
         @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 
     .logo-img-active {
         display: none;
-        @include size(58%, auto);
+        @include size(3.4rem, auto);
         @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
     }
 }
