@@ -450,61 +450,10 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
-.img-center {
-  display: flexbox;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.service-faq3 {
-  background: #fafafa;
-  padding: 30px;
-}
-
-.service-faq3 .service-element-faq3,
-.service-faq3 .service-info-faq3 {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.service-faq3 .service-icon {
-  display: block;
-  font-size: 30px;
-  color: #999caa;
-  margin-bottom: 30px;
-}
-
-.service-faq3:hover .service-element-faq3 {
-  opacity: 100%;
-  -webkit-transform: translate3d(0, -10%, 0);
-  -moz-transform: translate3d(0, -10%, 0);
-  transform: translate3d(0, -10%, 0);
-}
-
-.service-faq3:hover .service-info-faq3 {
-  -webkit-transform: translate3d(0, -10%, 0);
-  -moz-transform: translate3d(0, -10%, 0);
-  transform: translate3d(0, -10%, 0);
-}
-
 .servicios article.article {
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
-}
-
-.image-icon {
-  display: block;
-  font-size: 30px;
-  color: #999caa;
-  margin-bottom: 30px;
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
 
 .service {
@@ -524,7 +473,7 @@ fieldset[disabled] .btn-theme {
 
 .service .service-icon {
   display: block;
-  font-size: 30px;
+  font-size: 45px;
   color: #999caa;
   margin-bottom: 30px;
 }
@@ -598,6 +547,13 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
+  	[Benefits]
+------------------------------------------------------------------*/
+.benefits .service-element .service-icon {
+  color: #17bed27a;
+}
+
+/*------------------------------------------------------------------
   	[Faq]
 ------------------------------------------------------------------*/
 .faq .img-title-container {
@@ -628,6 +584,50 @@ fieldset[disabled] .btn-theme {
   content: "";
   margin-right: 10px;
   transform: translate(-21px, 13px);
+}
+
+/*------------------------------------------------------------------
+  	[Faq3]
+------------------------------------------------------------------*/
+.img-center {
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-faq3 {
+  background: #fafafa;
+  padding: 30px;
+}
+
+.service-faq3 .service-element-faq3,
+.service-faq3 .service-info-faq3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  transition-duration: 300ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+}
+
+.service-faq3 .service-icon {
+  display: block;
+  font-size: 30px;
+  color: #17bed27a;
+  margin-bottom: 30px;
+}
+
+.service-faq3:hover .service-element-faq3 {
+  opacity: 100%;
+  -webkit-transform: translate3d(0, -10%, 0);
+  -moz-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
+}
+
+.service-faq3:hover .service-info-faq3 {
+  -webkit-transform: translate3d(0, -10%, 0);
+  -moz-transform: translate3d(0, -10%, 0);
+  transform: translate3d(0, -10%, 0);
 }
 
 /*------------------------------------------------------------------

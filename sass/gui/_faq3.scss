@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+  	[Faq3]
+------------------------------------------------------------------*/
+.img-center {
+	display: flexbox;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.service-faq3 {
+	background: $color-sky-light;
+	padding: 30px;
+
+	.service-element-faq3,
+	.service-info-faq3 {
+		@include translate3d(0, 0, 0);
+		@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+	}
+
+	.service-icon {
+		display: block;
+		@include font($size: 30px);
+		color: $color-beneficios-item;
+		margin-bottom: 30px;
+	}
+
+	&:hover {
+		.service-element-faq3 {
+			opacity: 100%;
+			@include translate3d(0, -10%, 0);
+		}
+
+		.service-info-faq3 {
+			@include translate3d(0, -10%, 0);
+		}
+	}
+}
