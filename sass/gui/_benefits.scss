@@ -5,31 +5,42 @@
 .benefits {
 	.card {
 		background: $color-white;
-		padding: 30px;
-	
+		padding: 20px;
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		align-self: center;
+		text-align: center;
+		justify-content: center;
+		-webkit-box-shadow: -1px 1px 7px 8px rgba(0,0,0,0.01); 
+		box-shadow: -1px 1px 7px 8px rgba(0,0,0,0.01);
 		.card-element,
 		.card-info {
 			@include translate3d(0, 0, 0);
 			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+			p {
+				margin-top: 20px;
+				text-align: left;
+			}
 		}
 	
 		.card-icon {
 			display: block;
-			@include font($size: 45px);
+			@include font($size: convertPxToRem(45px));
 			color: $color-beneficios-item;
 			margin-bottom: 30px;
 		}
 	
 		&:hover {
+			-webkit-box-shadow: -1px 1px 17px 18px rgba(0,0,0,0.01); 
+			box-shadow: -1px 1px 17px 18px rgba(0,0,0,0.01);
 			.card-element {
 				opacity: 100%;
 				@include translate3d(0, -40%, 0);
-				// @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 			}
 	
 			.card-info {
 				@include translate3d(0, -30%, 0);
-				// @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
 			}
 		}
 	}

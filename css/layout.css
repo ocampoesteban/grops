@@ -18,6 +18,10 @@
 /* eg: @include rotate(45deg); */
 /* eg: @include translate3d(0,0,0); */
 /* eg: @include border-radius(3px); */
+/*
+* @param $unitToBeConverted - value to be converted
+* @return convert px to rem
+*/
 /*------------------------------------------------------------------
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
@@ -30,12 +34,12 @@ html, html a, body {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
-  font-family: Hind, sans-serif;
+html {
+  font-size: 14px;
 }
 
 p {
-  font-size: 15px;
+  font-size: 1.07143rem;
   font-weight: 400;
   font-family: Hind, sans-serif;
   color: #a6a7aa;
@@ -111,19 +115,19 @@ h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:foc
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.85714rem;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.42857rem;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 1.57143rem;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.57143rem;
 }
 
 ::selection {
@@ -168,6 +172,12 @@ h4 {
 
 .text-center {
   text-align: center;
+}
+
+.img-center {
+  display: flexbox;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .g-box-shadow__dark-lightest {
@@ -516,7 +526,15 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .benefits .card {
   background: #fff;
-  padding: 30px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+  -webkit-box-shadow: -1px 1px 7px 8px rgba(0, 0, 0, 0.01);
+  box-shadow: -1px 1px 7px 8px rgba(0, 0, 0, 0.01);
 }
 
 .benefits .card .card-element,
@@ -529,11 +547,22 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+.benefits .card .card-element p,
+.benefits .card .card-info p {
+  margin-top: 20px;
+  text-align: left;
+}
+
 .benefits .card .card-icon {
   display: block;
-  font-size: 45px;
+  font-size: 3.21429rem;
   color: #17bed27a;
   margin-bottom: 30px;
+}
+
+.benefits .card:hover {
+  -webkit-box-shadow: -1px 1px 17px 18px rgba(0, 0, 0, 0.01);
+  box-shadow: -1px 1px 17px 18px rgba(0, 0, 0, 0.01);
 }
 
 .benefits .card:hover .card-element {
@@ -585,19 +614,23 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Faq3]
 ------------------------------------------------------------------*/
-.img-center {
-  display: flexbox;
-  margin-left: auto;
-  margin-right: auto;
+.what-used-for .box-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.service-faq3 {
+.what-used-for .service-faq3 {
   background: #fafafa;
   padding: 30px;
 }
 
-.service-faq3 .service-element-faq3,
-.service-faq3 .service-info-faq3 {
+.what-used-for .service-faq3 .service-element {
+  font-size: 3.21429rem;
+  color: #17bed27a;
+}
+
+.what-used-for .service-faq3 .service-element-faq3,
+.what-used-for .service-faq3 .service-info-faq3 {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -606,26 +639,22 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.service-faq3 .service-icon {
-  display: block;
-  font-size: 30px;
-  color: #17bed27a;
-  margin-bottom: 30px;
-}
-
-.service-faq3:hover .service-element-faq3 {
+.what-used-for .service-faq3:hover .service-element-faq3 {
   opacity: 100%;
   -webkit-transform: translate3d(0, -10%, 0);
   -moz-transform: translate3d(0, -10%, 0);
   transform: translate3d(0, -10%, 0);
 }
 
-.service-faq3:hover .service-info-faq3 {
+.what-used-for .service-faq3:hover .service-info-faq3 {
   -webkit-transform: translate3d(0, -10%, 0);
   -moz-transform: translate3d(0, -10%, 0);
   transform: translate3d(0, -10%, 0);
 }
 
+/*------------------------------------------------------------------
+  	[Faq5]
+------------------------------------------------------------------*/
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
