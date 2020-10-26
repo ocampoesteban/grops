@@ -1,0 +1,16 @@
+/*------------------------------------------------------------------
+  	[Company]
+------------------------------------------------------------------*/
+.company {
+	.img-text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		@media (min-width: $screen-sm-min) {
+			display: unset;
+			.img {
+				text-align: right;
+			}
+		}
+	}
+}

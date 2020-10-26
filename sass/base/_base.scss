@@ -2,17 +2,20 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
-
-html {
-    overflow-x: hidden;
-}
-
 html, html a, body {
     -webkit-font-smoothing: antialiased;
 }
 
 html {
     font-size: $root-font-size;
+    overflow-x: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $root-font-sm-size;
+    }
+    @media (min-width: $screen-md-min) {
+        font-size: $root-font-size;
+    }
 }
 
 p {
