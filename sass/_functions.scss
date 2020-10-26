@@ -1,0 +1,7 @@
+/*
+* @param $unitToBeConverted - value to be converted
+* @return convert px to rem
+*/
+@function convertPxToRem($unitToBeConverted){
+    @return $unitToBeConverted / $root-font-size *1rem;
+}

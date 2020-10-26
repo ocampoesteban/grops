@@ -2,21 +2,24 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
-
-html {
-    overflow-x: hidden;
-}
-
 html, html a, body {
     -webkit-font-smoothing: antialiased;
 }
 
-body {
-    font-family: $font-family-base;
+html {
+    font-size: $root-font-size;
+    overflow-x: hidden;
+
+    @media (min-width: $screen-sm-min) {
+        font-size: $root-font-sm-size;
+    }
+    @media (min-width: $screen-md-min) {
+        font-size: $root-font-size;
+    }
 }
 
 p {
-    @include font($size: 15px, $weight: 400, $family: $font-family-base);
+    @include font($size: convertPxToRem(15px), $weight: 400, $family: $font-family-base);
     color: $color-subtitle;
     line-height: 1.4;
     margin-bottom: 15px;
@@ -81,10 +84,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-h1 { @include font($size: 40px); }
-h2 { @include font($size: 30px); }
-h3 { @include font($size: 22px); }
-h4 { @include font($size: 22px); }
+h1 { @include font($size: convertPxToRem(40px))}
+h2 { @include font($size: convertPxToRem(34px))}
+h3 { @include font($size: convertPxToRem(22px))}
+h4 { @include font($size: convertPxToRem(22px))}
 
 ::selection {
     color: $color-white;
@@ -122,6 +125,12 @@ h4 { @include font($size: 22px); }
 
 .text-center {
     text-align: center;
+}
+
+.img-center {
+	display: flexbox;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .g-box-shadow__dark-lightest {
