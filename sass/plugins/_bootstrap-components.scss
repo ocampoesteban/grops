@@ -48,11 +48,20 @@
     @include translate3d(0,-50%,0);
 }
 
+.carousel-title,
+.carousel-sub-title {
+    text-shadow: 1px 1px 2px #000000;
+}
+
 .carousel-title {
     @include font($size: 80px, $weight: 700);
     color: $color-white;
     line-height: 1.1;
     text-transform: uppercase;
+}
+
+.carousel-sub-title {
+    color: $color-white;
 }
 
 @media (max-width: $screen-sm-min) {
