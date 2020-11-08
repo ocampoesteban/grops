@@ -18,7 +18,9 @@
         border-bottom: 1px solid rgba(255,255,255,0.73);
         // @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
         .container {
-            display: flex;
+            @media (min-width: $screen-xs-min) {
+                display: flex;
+            }
         }
     }
 }
@@ -95,15 +97,22 @@
             }
         }
     }
-    .menu-container.social-media {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-    
-        .social-media-wrap { 
-            .social-media-img {
-                margin:0.25rem;
-                @include size(3rem, auto);
+     /* Navbar Logo */
+    .menu-container {
+        &.social-media {
+            display: none;
+            @media (min-width: $screen-xs-min) {
+                display: block;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+        
+            .social-media-wrap { 
+                .social-media-img {
+                    margin:0.25rem;
+                    @include size(3rem, auto);
+                }
             }
         }
     }
