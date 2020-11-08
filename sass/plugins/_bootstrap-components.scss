@@ -44,8 +44,7 @@
 }
 
 .carousel-centered {
-    @include position(absolute, $top: 50%);
-    @include translate3d(0,-50%,0);
+    @include position(absolute, $bottom:0 ,$left: 50%);
 }
 
 .carousel-title,
@@ -54,9 +53,8 @@
 }
 
 .carousel-title {
-    @include font($size: 80px, $weight: 700);
+    @include font($size: convertPxToRem(28px), $weight: 700);
     color: $color-white;
-    line-height: 1.1;
     text-transform: uppercase;
 }
 

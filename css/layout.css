@@ -1110,10 +1110,8 @@ footer .footer-copyright .row {
 
 .carousel-centered {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate3d(0, -50%, 0);
-  -moz-transform: translate3d(0, -50%, 0);
-  transform: translate3d(0, -50%, 0);
+  left: 50%;
+  bottom: 0;
 }
 
 .carousel-title,
@@ -1122,10 +1120,9 @@ footer .footer-copyright .row {
 }
 
 .carousel-title {
-  font-size: 80px;
+  font-size: 2rem;
   font-weight: 700;
   color: #fff;
-  line-height: 1.1;
   text-transform: uppercase;
 }
 
