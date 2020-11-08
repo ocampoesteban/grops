@@ -1,34 +1,41 @@
 /*------------------------------------------------------------------
   	[Header]
 ------------------------------------------------------------------*/
-
-/* Fixed Top */
-.navbar-fixed-top {
-    .navbar-collapse {
-        max-height: 100%;
+/* Collapse */
+.header {
+	.collapse {
+        margin-left: 3rem;
+        display: flex!important;
+        align-items: center;
     }
-}
+} 
 
 /* Navbar */
 .header {
 	.navbar {
+        min-height: convertPxToRem(80px);
 		margin-bottom: 0;
-        border-bottom: 1px solid rgba(255,255,255,.2);
-        @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-	}
+        border-bottom: 1px solid rgba(255,255,255,0.73);
+        // @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+        .container {
+            @media (min-width: $screen-xs-min) {
+                display: flex;
+            }
+        }
+    }
 }
 
 /* Navbar Toggle */
 .header {
     .navbar-toggle {
-        @include size(25px);
+        @include size(convertPxToRem(25px));
         border: none;
         padding: 0;
         margin: 35px 0;
 
         .toggle-icon {
             @include position(relative);
-            @include size(21px, 1px);
+            @include size(convertPxToRem(21px), convertPxToRem(1px));
             display: inline-block;
             background: $color-heading;
             @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
@@ -41,14 +48,14 @@
             }
 
             &:before {
-                @include size(10px, 1px);
+                @include size(convertPxToRem(10px), convertPxToRem(1px));
                 bottom: 10px;
                 @include rotate(0);
                 @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
             }
             
             &:after {
-                @include size(16px, 1px);
+                @include size(convertPxToRem(16px),convertPxToRem(1px));
                 top: -5px;
                 @include rotate(0);
                 @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
@@ -62,7 +69,7 @@
 
                 &:before,
                 &:after {
-            		@include size(21px, 1px);
+            		@include size(convertPxToRem(21px), convertPxToRem(1px));
                     background: $color-base;
                 	@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
                 }
@@ -75,53 +82,40 @@
     }
 }
 
-/* Navbar Logo */
 .header {
+    background-color: white;
+    /* Navbar Logo */
     .logo {
-        @include size(100px);
-        float: left;
-        max-height: 95px;
-        line-height: 65px;
-    }
-    
-    .logo-wrap {
-        display: inline-block;
-        padding: 12px 0;
+        @include size(convertPxToRem(100px));
+        display: flex;
+        align-items: center;
 
-        &:focus,
-        &:hover {
-            text-decoration: none;
+        .logo-wrap { 
+           .logo-img {
+                @include size(10rem, auto);
+                max-height: 100%;
+            }
         }
     }
-
-    .logo-img {
-        display: inline-block;
-        @include size(80%, auto);
-        max-width: 100%;
-        max-height: 100%;
-        vertical-align: middle;
+     /* Navbar Logo */
+    .menu-container {
+        &.social-media {
+            display: none;
+            @media (min-width: $screen-xs-min) {
+                display: block;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+            }
+        
+            .social-media-wrap { 
+                .social-media-img {
+                    margin:0.25rem;
+                    @include size(3rem, auto);
+                }
+            }
+        }
     }
-
-    .logo-img-main {
-        display: inline-block;
-        @include size(3.4rem, auto);
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-    }
-
-    .logo-img-active {
-        display: none;
-        @include size(3.4rem, auto);
-        @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-    }
-}
-
-/* Navbar */
-.header {
-	.navbar-nav {
-		padding-left: 0;
-		margin-bottom: 0;
-		list-style: none;
-	}
 }
 
 /* Nav */
@@ -132,16 +126,10 @@
 
 		&:last-child {
 			.nav-item-child {
-				padding-right: 0;
+                color: $color-beneficios-item;
+                font-weight: 800;
 			}
 		}
-
-        .nav-item-hover.active {
-            &:after {
-                opacity: 1;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-            }
-        }
 
         &:hover {
             .nav-item-hover {
@@ -154,15 +142,12 @@
 	}
 	
 	.nav-item-child {
-		@include position(relative);
-		display: block;
-		@include font($size: 13px, $weight: 600, $family: $font-family-base);
-        color: $color-white;
+		@include font($size: convertPxToRem(16px), $family: $font-family-base);
+        color: $color-heading;
 		text-transform: uppercase;
-		line-height: 55px;
-		padding: 20px;
+		padding-left: 20px;
         @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-	}
+    }
 
     .nav-item-hover {
         @include position(relative);
@@ -221,19 +206,6 @@
         }
     }
 
-    /* Logo */
-    .header {
-        .logo {
-            .logo-img-main {
-                display: none;
-            }
-            
-            .logo-img-active {
-                display: inline-block;
-            }
-        }
-    }
-
     /* Navbar Nav */
     .header {
         .nav-item-child {
@@ -286,34 +258,6 @@
     .header {
         .navbar-nav-right {
             float: right;
-        }
-    }
-}
-
-/* Page On Scroll */
-@media (min-width: $screen-md-min) {
-    .page-on-scroll {
-        .header {
-            .navbar {
-                background: $color-white;
-                border-bottom-color: #f0f0f0;
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-            }
-
-            .logo-img-main {
-                display: none;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-            }
-            
-            .logo-img-active {
-                display: inline-block;
-                @include cubic-transition($delay: 0, $duration: 400ms, $property: (all));
-            }
-
-            .nav-item-child {
-                color: $color-heading;
-                @include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
-            }
         }
     }
 }
