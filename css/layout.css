@@ -1045,6 +1045,28 @@ footer .footer-copyright .row {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
+.carousel-title,
+.carousel-sub-title {
+  text-shadow: 1px 1px 2px #000000;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .carousel-title {
+    font-size: 60px;
+  }
+}
+
+.carousel-sub-title {
+  color: #fff;
+}
+
 /*------------------------------------------------------------------
   	[Form Control]
 ------------------------------------------------------------------*/
@@ -1101,39 +1123,48 @@ footer .footer-copyright .row {
 /*------------------------------------------------------------------
     [Carousel]
 ------------------------------------------------------------------*/
-.carousel-indicators {
+.carousel .carousel-indicators {
   left: auto;
   width: auto;
   padding-left: 0;
   margin-left: 0;
 }
 
-.carousel-centered {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
+.carousel .carousel-text {
+  text-align: center;
+  padding-top: 16rem;
 }
 
-.carousel-title,
-.carousel-sub-title {
-  text-shadow: 1px 1px 2px #000000;
+@media (min-width: 768px) {
+  .carousel .carousel-text {
+    padding-top: 0;
+    position: absolute;
+    right: 30px;
+    bottom: 35px;
+  }
 }
 
-.carousel-title {
+.carousel .carousel-title,
+.carousel .carousel-sub-title {
+  text-shadow: 1px 1px 1px #000000;
+  color: #fff;
+}
+
+.carousel .carousel-title {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
   text-transform: uppercase;
 }
 
-.carousel-sub-title {
-  color: #fff;
+@media (min-width: 768px) {
+  .carousel .carousel-title {
+    font-size: 1.35714rem;
+  }
 }
 
-@media (max-width: 768px) {
-  .carousel-title {
-    font-size: 60px;
-  }
+.carousel .carousel-sub-title {
+  font-size: 1.35714rem;
+  font-weight: 700;
 }
 
 /*----------------------------------

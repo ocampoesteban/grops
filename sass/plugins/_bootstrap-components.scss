@@ -1,4 +1,20 @@
-/*------------------------------------------------------------------
+.carousel-title,
+    .carousel-sub-title {
+        text-shadow: 1px 1px 2px #000000;
+    }
+    
+    .carousel-title {
+        @include font($size: convertPxToRem(28px), $weight: 700);
+        color: $color-white;
+        text-transform: uppercase;
+        @media (max-width: $screen-sm-min) {
+            @include font($size: 60px);
+        }
+    }
+    
+    .carousel-sub-title {
+        color: $color-white;
+    }/*------------------------------------------------------------------
   	[Form Control]
 ------------------------------------------------------------------*/
 
@@ -35,35 +51,38 @@
 /*------------------------------------------------------------------
     [Carousel]
 ------------------------------------------------------------------*/
+.carousel {
+    .carousel-indicators {
+        left: auto;
+        width: auto;
+        padding-left: 0;
+        margin-left: 0;
+    }
+    
+    .carousel-text {
+        text-align: center;
+        padding-top: 16rem;
+        @media (min-width: $screen-sm-min) {
+            padding-top: 0;
+            @include position(absolute, $bottom: 35px, $right: 30px)
+        }
+    }
 
-.carousel-indicators {
-    left: auto;
-    width: auto;
-    padding-left: 0;
-    margin-left: 0;
-}
-
-.carousel-centered {
-    @include position(absolute, $bottom:0 ,$left: 50%);
-}
-
-.carousel-title,
-.carousel-sub-title {
-    text-shadow: 1px 1px 2px #000000;
-}
-
-.carousel-title {
-    @include font($size: convertPxToRem(28px), $weight: 700);
-    color: $color-white;
-    text-transform: uppercase;
-}
-
-.carousel-sub-title {
-    color: $color-white;
-}
-
-@media (max-width: $screen-sm-min) {
+    .carousel-title,
+    .carousel-sub-title {
+        text-shadow: 1px 1px 1px #000000;
+        color: $color-white;
+    }
+    
     .carousel-title {
-        @include font($size: 60px);
-    }    
+        @include font($size: convertPxToRem(28px), $weight: 700);
+        text-transform: uppercase;
+        @media (min-width: $screen-sm-min) {
+            @include font($size: convertPxToRem(19px));
+        }
+    }
+    
+    .carousel-sub-title {
+        @include font($size: convertPxToRem(19px), $weight: 700);
+    }
 }
