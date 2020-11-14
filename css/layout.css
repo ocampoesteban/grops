@@ -365,7 +365,14 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 @media (min-width: 768px) {
   .company-img-container {
-    width: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  .company-img-container .img {
+    width: 75%;
   }
 }
 
