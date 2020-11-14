@@ -5,16 +5,41 @@
 	.row {
 		display: flex;
 		flex-wrap: wrap;
-		&-card {
-			border-radius: 5px;
-			overflow: hidden;
-			background-color: white;
-			// check
-			// .arrow {
-			// 	margin: 0.25rem;
-			// 	width: 3rem;
-			// 	height: auto;
-			// }
+	}
+	&-card {
+		.border-x {
+			@media (min-width: $screen-sm-min) {
+				border-left: 1px solid #80808063;
+				border-right: 1px solid #80808063;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+		border-radius: 5px;
+		overflow: hidden;
+		background-color: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&-arrow {
+		margin-top: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 15vw;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 0;
+		}
+		.text {
+			white-space: nowrap;
+			margin-bottom: 0;
+		}
+		.img {
+			transform: rotate(180deg);
+			@include size(20px, auto);
+			cursor: pointer;
 		}
 	}
 }

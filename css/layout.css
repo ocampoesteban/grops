@@ -475,10 +475,49 @@ fieldset[disabled] .btn-theme {
   flex-wrap: wrap;
 }
 
-.services .row-card {
+.services-card {
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .services-card .border-x {
+    border-left: 1px solid #80808063;
+    border-right: 1px solid #80808063;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.services-arrow {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15vw;
+}
+
+@media (min-width: 768px) {
+  .services-arrow {
+    margin-bottom: 0;
+  }
+}
+
+.services-arrow .text {
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.services-arrow .img {
+  transform: rotate(180deg);
+  width: 20px;
+  height: auto;
+  cursor: pointer;
 }
 
 /*------------------------------------------------------------------
@@ -814,6 +853,7 @@ footer .footer-copyright .row {
 
 .header {
   background-color: white;
+  border-bottom: 1px solid #a9a9a9b8;
   /* Navbar Logo */
   /* Navbar Logo */
 }
@@ -845,6 +885,7 @@ footer .footer-copyright .row {
 }
 
 .header .menu-container.social-media .social-media-wrap .social-media-img {
+  cursor: pointer;
   margin: 0.25rem;
   width: 3rem;
   height: auto;
