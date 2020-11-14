@@ -461,9 +461,14 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Service]
+  	[Services]
 ------------------------------------------------------------------*/
-.servicios article.article {
+.services .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services .row-card {
   border-radius: 5px;
   overflow: hidden;
   background-color: white;
