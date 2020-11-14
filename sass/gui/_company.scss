@@ -4,7 +4,6 @@
 .company {
 	@media (min-width: $screen-sm-min) {
 		&-img-container {
-			width: 100%;
 			display: flex;
 			flex-direction: column;
 			align-items: flex-end;
