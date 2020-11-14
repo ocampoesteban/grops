@@ -363,18 +363,9 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Company]
 ------------------------------------------------------------------*/
-.company .img-text-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 @media (min-width: 768px) {
-  .company .img-text-container {
-    display: unset;
-  }
-  .company .img-text-container .img {
-    text-align: right;
+  .company-img-container {
+    width: 90%;
   }
 }
 
