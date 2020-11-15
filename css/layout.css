@@ -16,24 +16,24 @@ html, html a, body {
 }
 
 html {
-  font-size: 14px;
+  font-size: 16px;
   overflow-x: hidden;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 992px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 p {
-  font-size: 1.07143rem;
+  font-size: 0.9375rem;
   font-weight: 400;
   font-family: Hind, sans-serif;
   color: #a6a7aa;
@@ -109,19 +109,23 @@ h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:foc
 }
 
 h1 {
-  font-size: 2.85714rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-  font-size: 2.42857rem;
+  font-size: 2.125rem;
 }
 
 h3 {
-  font-size: 1.57143rem;
+  font-size: 1.375rem;
 }
 
 h4 {
-  font-size: 1.57143rem;
+  font-size: 1.0625rem;
+}
+
+h5 {
+  font-size: 0.9375rem;
 }
 
 ::selection {
@@ -231,6 +235,11 @@ h4 {
 .g-padding-x-40--xs {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+
+.g-padding-x-20--xs {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .g-padding-y-40--xs {
@@ -371,7 +380,7 @@ fieldset[disabled] .btn-theme {
     width: 100%;
   }
   .company-img-container .img {
-    width: 75%;
+    width: 65%;
   }
 }
 
@@ -483,13 +492,8 @@ fieldset[disabled] .btn-theme {
   align-items: center;
 }
 
-@media (min-width: 768px) {
-  .services-card .border-x {
-    border-left: 1px solid #80808063;
-    border-right: 1px solid #80808063;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+.services-card .text-description {
+  text-align: justify;
 }
 
 .services-arrow {
@@ -607,7 +611,7 @@ fieldset[disabled] .btn-theme {
 
 .benefits .card .card-icon {
   display: block;
-  font-size: 3.21429rem;
+  font-size: 2.8125rem;
   color: #3c763d;
   margin-bottom: 30px;
 }
@@ -635,7 +639,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .what-used-for .row .card {
   flex: 1;
-  margin-bottom: 1.07143rem;
+  margin-bottom: 0.9375rem;
 }
 
 .what-used-for .row .card .service-faq3 {
@@ -647,7 +651,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .what-used-for .row .card .service-faq3 .service-element {
-  font-size: 3.21429rem;
+  font-size: 2.8125rem;
   color: #3c763d;
 }
 
@@ -680,7 +684,7 @@ fieldset[disabled] .btn-theme {
 
 @media (min-width: 768px) {
   .what-used-for .row .card {
-    margin: 1.07143rem;
+    margin: 0.9375rem;
   }
 }
 
@@ -699,6 +703,13 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .FAQ-image-container {
   width: 100%;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .FAQ-image-container {
+    margin-bottom: 0;
+  }
 }
 
 .FAQ-image-container .img {
@@ -761,7 +772,7 @@ footer .footer-copyright .row {
 
 /* Navbar */
 .header .navbar {
-  min-height: 5.71429rem;
+  min-height: 5rem;
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.73);
 }
@@ -774,8 +785,8 @@ footer .footer-copyright .row {
 
 /* Navbar Toggle */
 .header .navbar-toggle {
-  width: 1.78571rem;
-  height: 1.78571rem;
+  width: 1.5625rem;
+  height: 1.5625rem;
   border: none;
   padding: 0;
   margin: 35px 0;
@@ -783,8 +794,8 @@ footer .footer-copyright .row {
 
 .header .navbar-toggle .toggle-icon {
   position: relative;
-  width: 1.5rem;
-  height: 0.07143rem;
+  width: 1.3125rem;
+  height: 0.0625rem;
   display: inline-block;
   background: #515769;
   transition-duration: 300ms;
@@ -800,8 +811,8 @@ footer .footer-copyright .row {
 }
 
 .header .navbar-toggle .toggle-icon:before {
-  width: 0.71429rem;
-  height: 0.07143rem;
+  width: 0.625rem;
+  height: 0.0625rem;
   bottom: 10px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -812,8 +823,8 @@ footer .footer-copyright .row {
 }
 
 .header .navbar-toggle .toggle-icon:after {
-  width: 1.14286rem;
-  height: 0.07143rem;
+  width: 1rem;
+  height: 0.0625rem;
   top: -5px;
   -webkit-transform: rotate(0);
   -moz-transform: rotate(0);
@@ -831,8 +842,8 @@ footer .footer-copyright .row {
 }
 
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
-  width: 1.5rem;
-  height: 0.07143rem;
+  width: 1.3125rem;
+  height: 0.0625rem;
   background: #17bed2;
   transition-duration: 300ms;
   transition-property: all;
@@ -851,8 +862,8 @@ footer .footer-copyright .row {
 }
 
 .header .logo {
-  width: 7.14286rem;
-  height: 7.14286rem;
+  width: 6.25rem;
+  height: 6.25rem;
   display: flex;
   align-items: center;
 }
@@ -902,7 +913,7 @@ footer .footer-copyright .row {
 }
 
 .header .nav-item-child {
-  font-size: 1.14286rem;
+  font-size: 1rem;
   font-family: Hind, sans-serif;
   color: #515769;
   text-transform: uppercase;
@@ -1097,7 +1108,7 @@ footer .footer-copyright .row {
 }
 
 .carousel-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
@@ -1197,19 +1208,19 @@ footer .footer-copyright .row {
 }
 
 .carousel .carousel-title {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 @media (min-width: 768px) {
   .carousel .carousel-title {
-    font-size: 1.35714rem;
+    font-size: 1.1875rem;
   }
 }
 
 .carousel .carousel-sub-title {
-  font-size: 1.35714rem;
+  font-size: 1.1875rem;
   font-weight: 700;
 }
 
@@ -1431,6 +1442,21 @@ footer .footer-copyright .row {
 .content-lg {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+/*------------------------------------------------------------------
+    [Center cols vertically]
+------------------------------------------------------------------*/
+.row.cols-centered {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .row.cols-centered {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /*------------------------------------------------------------------

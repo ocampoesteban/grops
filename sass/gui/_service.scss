@@ -7,20 +7,15 @@
 		flex-wrap: wrap;
 	}
 	&-card {
-		.border-x {
-			@media (min-width: $screen-sm-min) {
-				border-left: 1px solid #80808063;
-				border-right: 1px solid #80808063;
-				padding-left: 15px;
-				padding-right: 15px;
-			}
-		}
 		border-radius: 5px;
 		overflow: hidden;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		.text-description {
+			text-align: justify;
+		}
 	}
 	&-arrow {
 		margin-top: auto;
