@@ -1,0 +1,18 @@
+/*------------------------------------------------------------------
+  	[FAQ]
+------------------------------------------------------------------*/
+.FAQ {
+	&-image-container {
+		width: 100%;
+		.img {
+			width: 100%;
+			@media (min-width: $screen-sm-min) {
+				width: 75%;
+			}
+		}
+	}
+	&-card {
+		display: flex;
+		align-items: baseline;
+	}
+}

@@ -632,39 +632,6 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Faq]
-------------------------------------------------------------------*/
-.faq .img-title-container {
-  text-align: center;
-}
-
-.faq .gestion-energetica img,
-.faq .integra-energia img {
-  width: 35%;
-  margin: 0 auto;
-}
-
-.faq .faq-item {
-  margin-left: 4vw;
-  margin-right: 4vw;
-}
-
-.faq .faq-item h4.item {
-  color: #a6a7aa;
-  font-weight: 600;
-}
-
-.faq .faq-item h4.item:before {
-  position: absolute;
-  width: 9px;
-  height: 2.4px;
-  background: #17bed2;
-  content: "";
-  margin-right: 10px;
-  transform: translate(-21px, 13px);
-}
-
-/*------------------------------------------------------------------
   	[Faq3]
 ------------------------------------------------------------------*/
 .what-used-for .row .card {
@@ -728,6 +695,28 @@ fieldset[disabled] .btn-theme {
 /*------------------------------------------------------------------
   	[Faq5]
 ------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+  	[FAQ]
+------------------------------------------------------------------*/
+.FAQ-image-container {
+  width: 100%;
+}
+
+.FAQ-image-container .img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .FAQ-image-container .img {
+    width: 75%;
+  }
+}
+
+.FAQ-card {
+  display: flex;
+  align-items: baseline;
+}
+
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
@@ -1218,51 +1207,6 @@ footer .footer-copyright .row {
 .carousel .carousel-sub-title {
   font-size: 1.35714rem;
   font-weight: 700;
-}
-
-/*----------------------------------
-  Custome Style of Info Window
-------------------------------------*/
-/* White background and box outline */
-.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div {
-  background-color: #fff !important;
-  box-shadow: none !important;
-}
-
-/* Arrow colour */
-.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div {
-  background-color: #fff !important;
-  box-shadow: none !important;
-}
-
-.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div:first-child {
-  display: none;
-}
-
-/* Let's remove image icon inside close button */
-.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img {
-  display: none;
-}
-
-/* New arrow style */
-.gm-style > div:first-child > div + div > div:last-child > div > div:last-child {
-  overflow: inherit !important;
-}
-
-.gm-style > div:first-child > div + div > div:last-child > div > div:last-child:after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 15px;
-  font-family: Simple-Line-Icons;
-  color: #515769;
-  content: "\e082";
-}
-
-/* Positioning of infowindow */
-.gm-style-iw {
-  top: 22px !important;
-  left: 22px !important;
 }
 
 /*--------------------------------------------------
