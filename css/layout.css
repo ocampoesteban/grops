@@ -477,7 +477,6 @@ fieldset[disabled] .btn-theme {
 .services-card {
   border-radius: 5px;
   overflow: hidden;
-  background-color: white;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -714,7 +713,12 @@ fieldset[disabled] .btn-theme {
 
 .FAQ-card {
   display: flex;
-  align-items: baseline;
+  align-items: end;
+}
+
+.FAQ-card .img {
+  width: 3rem;
+  height: auto;
 }
 
 /*------------------------------------------------------------------

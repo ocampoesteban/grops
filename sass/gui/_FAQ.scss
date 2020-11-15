@@ -13,6 +13,9 @@
 	}
 	&-card {
 		display: flex;
-		align-items: baseline;
+		align-items: end;
+		.img {
+			@include size(3rem, auto);
+		}
 	}
 }
