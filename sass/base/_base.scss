@@ -124,6 +124,10 @@ h5 { @include font($size: convertPxToRem(15px))}
     text-decoration: none;
 }
 
+.text-left {
+    text-align: left;
+}
+
 .text-center {
     text-align: center;
 }
@@ -183,6 +187,10 @@ h5 { @include font($size: convertPxToRem(15px))}
 .g-padding-x-20--xs {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+}
+.g-padding-y-40--xs {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 .g-padding-y-40--xs {
     padding-top: 2.5rem;

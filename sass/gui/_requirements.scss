@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------
+  	[requirementsSGE]
+------------------------------------------------------------------*/
+.requirementsSGE {
+	&-card {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		.img-container {
+			width:100%;
+			.img {
+				width:75%;
+				@media (min-width: $screen-sm-min) {
+					width: 85%;
+				}
+			}
+		}
+	}
+}

@@ -168,6 +168,10 @@ h5 {
   text-decoration: none;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -240,6 +244,11 @@ h5 {
 .g-padding-x-20--xs {
   padding-left: 1.75rem;
   padding-right: 1.75rem;
+}
+
+.g-padding-y-40--xs {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .g-padding-y-40--xs {
@@ -638,8 +647,28 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Faq5]
+  	[requirementsSGE]
 ------------------------------------------------------------------*/
+.requirementsSGE-card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.requirementsSGE-card .img-container {
+  width: 100%;
+}
+
+.requirementsSGE-card .img-container .img {
+  width: 75%;
+}
+
+@media (min-width: 768px) {
+  .requirementsSGE-card .img-container .img {
+    width: 85%;
+  }
+}
+
 /*------------------------------------------------------------------
   	[FAQ]
 ------------------------------------------------------------------*/
@@ -660,7 +689,7 @@ fieldset[disabled] .btn-theme {
 
 @media (min-width: 768px) {
   .FAQ-image-container .img {
-    width: 75%;
+    width: 85%;
   }
 }
 
