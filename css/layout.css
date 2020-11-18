@@ -647,6 +647,33 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
+  	[benefitsIntegra]
+------------------------------------------------------------------*/
+@media (min-width: 768px) {
+  .benefitsIntegra .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.benefitsIntegra-card {
+  background-color: #fafafa;
+  margin: 1.5vw;
+  padding: 1vw 2vw;
+}
+
+.benefitsIntegra-card .img-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.benefitsIntegra-card .img-container .img {
+  width: 36%;
+}
+
+/*------------------------------------------------------------------
   	[requirementsSGE]
 ------------------------------------------------------------------*/
 .requirementsSGE-card {
@@ -661,12 +688,6 @@ fieldset[disabled] .btn-theme {
 
 .requirementsSGE-card .img-container .img {
   width: 75%;
-}
-
-@media (min-width: 768px) {
-  .requirementsSGE-card .img-container .img {
-    width: 85%;
-  }
 }
 
 /*------------------------------------------------------------------

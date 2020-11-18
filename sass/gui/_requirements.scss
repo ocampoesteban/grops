@@ -10,9 +10,6 @@
 			width:100%;
 			.img {
 				width:75%;
-				@media (min-width: $screen-sm-min) {
-					width: 85%;
-				}
 			}
 		}
 	}
