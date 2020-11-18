@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+  	[FAQ]
+------------------------------------------------------------------*/
+.FAQ {
+	&-image-container {
+		width: 100%;
+		margin-bottom:40px;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom:0;
+		}
+		.img {
+			width: 100%;
+			@media (min-width: $screen-sm-min) {
+				width: 85%;
+			}
+		}
+	}
+	&-card {
+		display: flex;
+		align-items: center;
+		.img {
+			@include size(3.5rem, auto);
+		}
+	}
+}

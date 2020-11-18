@@ -84,6 +84,7 @@
 
 .header {
     background-color: white;
+    border-bottom: 1px solid #a9a9a9b8;
     /* Navbar Logo */
     .logo {
         @include size(convertPxToRem(100px));
@@ -110,6 +111,7 @@
         
             .social-media-wrap { 
                 .social-media-img {
+                    cursor: pointer;
                     margin:0.25rem;
                     @include size(3rem, auto);
                 }
@@ -126,7 +128,7 @@
 
 		&:last-child {
 			.nav-item-child {
-                color: $color-beneficios-item;
+                color: $color-green;
                 font-weight: 800;
 			}
 		}

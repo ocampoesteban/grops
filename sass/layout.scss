@@ -21,15 +21,18 @@
 
 // Gui
 // =================================================================
-@import 'gui/company'; // Faq5
+@import 'gui/company'; // company
 @import 'gui/pricing'; // Pricing
 @import 'gui/promo-section'; // Promo Section
 @import 'gui/service'; // Service
 @import 'gui/work'; // Work
-@import 'gui/_benefits'; // Benefits
-@import 'gui/_faq-main-screen'; // Faq-main-screen
-@import 'gui/faq3'; // Faq3
-@import 'gui/faq5'; // Faq5
+@import 'gui/_benefits'; // BenefitsSGE
+@import 'gui/_benefitsIntegra'; // BenefitsIntegra
+// @import 'gui/faq3'; // Faq3
+@import 'gui/_whatUsedforIntegra'; // BenefitsSGE
+
+@import 'gui/requirements'; // requirementsSGE
+@import 'gui/FAQ'; // FAQ
 
 // Layout
 // =================================================================
@@ -49,7 +52,6 @@
 
 @import 'plugins/back-to-top'; // Back To Top
 @import 'plugins/bootstrap-components'; // Bootstrap Components
-@import 'plugins/gmap'; // Google Map
 @import 'plugins/masonry'; // Masonry
 @import 'plugins/swiper'; // Swiper
 

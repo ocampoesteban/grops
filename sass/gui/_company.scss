@@ -2,14 +2,14 @@
   	[Company]
 ------------------------------------------------------------------*/
 .company {
-	.img-text-container {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		@media (min-width: $screen-sm-min) {
-			display: unset;
+	@media (min-width: $screen-sm-min) {
+		&-img-container {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 100%;
 			.img {
-				text-align: right;
+				width: 65%;
 			}
 		}
 	}

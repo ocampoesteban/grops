@@ -37,6 +37,18 @@
 	padding-bottom: 100px;
 }
 
+/*------------------------------------------------------------------
+    [Center cols vertically]
+------------------------------------------------------------------*/
+.row.cols-centered {
+    display:flex;
+    flex-direction: column;
+    @media (min-width: $screen-sm-min) {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
 
 /*------------------------------------------------------------------
     [Parallax Content]

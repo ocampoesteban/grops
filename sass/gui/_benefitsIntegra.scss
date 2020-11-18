@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------
+  	[benefitsIntegra]
+------------------------------------------------------------------*/
+.benefitsIntegra {
+	.row {
+		@media (min-width: $screen-sm-min) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		} 
+	}
+	&-card {
+		background-color: #fafafa;
+		margin: 1.5vw;
+		padding: 1vw 2vw;
+		.img-container {
+			padding: 30px;
+			display: flex;
+			justify-content: center;
+			.img {
+				width: 36%;
+			}
+		}
+	}
+}

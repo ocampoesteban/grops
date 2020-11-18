@@ -1,12 +1,39 @@
 /*------------------------------------------------------------------
-  	[Service]
+  	[Services]
 ------------------------------------------------------------------*/
-.servicios {
-	article {
-		&.article {
-			border-radius: 5px;
-			overflow: hidden;
-			background-color: white;
+.services {
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&-card {
+		border-radius: 5px;
+		overflow: hidden;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.text-description {
+			text-align: justify;
+		}
+	}
+	&-arrow {
+		margin-top: auto;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 15vw;
+		@media (min-width: $screen-sm-min) {
+			margin-bottom: 0;
+		}
+		.text {
+			white-space: nowrap;
+			margin-bottom: 0;
+		}
+		.img {
+			transform: rotate(180deg);
+			@include size(20px, auto);
+			cursor: pointer;
 		}
 	}
 }

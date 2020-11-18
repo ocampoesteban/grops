@@ -1,0 +1,45 @@
+/*------------------------------------------------------------------
+  	[What used for]
+------------------------------------------------------------------*/
+.what-used-for-integra {
+	.row {
+		@media (min-width: $screen-sm-min) {
+			display: flex;
+			justify-content: center;
+		}
+	}
+	&-card {
+		background: $color-white;
+		margin: 10px;
+		display: flex;
+		padding: 1.5vw;
+		align-items: center;
+		-webkit-box-shadow: -1px 1px 7px 8px rgba(0,0,0,0.01); 
+		box-shadow: -1px 1px 7px 8px rgba(0,0,0,0.01);
+		.img-container {
+			width: 40%;
+			margin-right: 20px;
+			@media (min-width: $screen-sm-min) {
+				width: 70%;
+			}
+		}
+		.img-container,
+		.card-info {
+			@include translate3d(0, 0, 0);
+			@include cubic-transition($delay: 0, $duration: 300ms, $property: (all));
+		}
+	
+		&:hover {
+			-webkit-box-shadow: -1px 1px 17px 18px rgba(0,0,0,0.01); 
+			box-shadow: -1px 1px 17px 18px rgba(0,0,0,0.01);
+			.img-container {
+				opacity: 100%;
+				@include translate3d(0, -20%, 0);
+			}
+	
+			.card-info {
+				@include translate3d(0, -10%, 0);
+			}
+		}
+	}
+}
